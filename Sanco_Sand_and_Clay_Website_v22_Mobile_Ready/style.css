@@ -607,3 +607,22 @@ footer { background: #111; color: #bdb7b1; padding: 24px 0; font-size: 13px; }
   .quick-service-grid { grid-template-columns:1fr !important; }
   .quick-service { border-right:0; }
 }
+
+
+/* Additional Sanco locations */
+.locations-section { background:#f7f4ef; }
+.locations-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+.location-card {
+  min-height:150px;
+  padding:30px 26px;
+  display:flex;
+  align-items:center;
+  gap:18px;
+  background:#fff;
+  border:1px solid #ded6cd;
+  border-radius:9px;
+  box-shadow:0 8px 25px rgba(45,30,15,.05);
+}
+.location-pin { color:#a45d25; font-size:20px; }
+.location-card h3 { margin:0; color:#29231e; font-size:26px; }
+@media (max-width:850px) { .locations-grid { grid-template-columns:1fr; } .location-card { min-height:110px; } }
